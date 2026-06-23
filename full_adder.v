@@ -1,9 +1,9 @@
 Module full_adder(
-       input A,
-       input B,
-       input Cin,
-       output Sum,
+       input a,
+       input b,
+       input cin,
+       output s,
        output cout);
-  assign Sum = A^ B^ Cin;
-assign Cout = (A&B)|(B&Cin)|(A&Cin);
+  assign s = a^ b^ cin;
+assign cout = (a&b)|(b&cin)|(a&cin);
 endmodule
