@@ -40,5 +40,5 @@ Verilog implementation and functional verification of a 4-bit Ripple carry adder
 - GitHub
 
 ## Author 
-**Apoorva B A**
--ECE student
+Apoorva B A
+ECE student
