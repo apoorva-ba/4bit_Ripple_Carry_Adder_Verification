@@ -28,10 +28,10 @@ Verilog implementation and functional verification of a 4-bit Ripple carry adder
 | A | B | Cin | Sum | Cout |
 |---|---|-----|-----|------|
 | 0000 | 0000 | 0 | 0000 | 0 |
-| 0011 | 0101 | 0 | 0101 | 0 |
-| 0111 | 0110 | 0 | 1011 | 0 |
+| 0011 | 0101 | 0 | 1000 | 0 |
+| 0111 | 0001 | 0 | 1000 | 0 |
 | 1111 | 0001 | 0 | 0000 | 1 |
-| 1111 | 1111 | 1 | 1111 | 1 |
+| 1010 | 0101 | 1 | 0000 | 1 |
 
 ## Tools used
 - Verilog HDL
