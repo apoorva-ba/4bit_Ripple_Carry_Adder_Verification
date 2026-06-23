@@ -8,36 +8,9 @@ module ripple_carry_adder_4bit (
 
 wire c1, c2, c3;
 
-full_adder FA0 (
-    .a(A[0]),
-    .b(B[0]),
-    .cin(Cin),
-    .sum(Sum[0]),
-    .cout(c1)
-);
-
-full_adder FA1 (
-    .a(A[1]),
-    .b(B[1]),
-    .cin(c1),
-    .sum(Sum[1]),
-    .cout(c2)
-);
-
-full_adder FA2 (
-    .a(A[2]),
-    .b(B[2]),
-    .cin(c2),
-    .sum(Sum[2]),
-    .cout(c3)
-);
-
-full_adder FA3 (
-    .a(A[3]),
-    .b(B[3]),
-    .cin(c3),
-    .sum(Sum[3]),
-    .cout(Cout)
-);
+full_adder FA0(A[0], B[0], Cin, Sum[0], c1);
+full_adder FA1(A[1], B[1], c1,  Sum[1], c2);
+full_adder FA2(A[2], B[2], c2,  Sum[2], c3);
+full_adder FA3(A[3], B[3], c3,  Sum[3], Cout);
 
 endmodule
